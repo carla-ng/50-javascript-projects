@@ -24,6 +24,7 @@ body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   width: 90vw;
 }
 
@@ -103,6 +104,6 @@ body .container .panel.active {
 
 body .container .panel.active h3 {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in 0.6s;
-  transition: opacity 0.3s ease-in 0.6s;
+  -webkit-transition: opacity 0.3s ease-in 0.7s;
+  transition: opacity 0.3s ease-in 0.7s;
 }
