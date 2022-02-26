@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+}
+
+@media (max-width: 480px) {
+  body .container {
+    width: 100vw;
+  }
+}
+
+body .container .panel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 35px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  height: 80vh;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: -webkit-box-flex 0.7s ease-in;
+  transition: -webkit-box-flex 0.7s ease-in;
+  transition: flex 0.7s ease-in;
+  transition: flex 0.7s ease-in, -webkit-box-flex 0.7s ease-in, -ms-flex 0.7s ease-in;
+}
+
+@media (max-width: 480px) {
+  body .container .panel:nth-of-type(4), body .container .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+body .container .panel:nth-of-type(1) h3 {
+  background-color: #ffd438;
+}
+
+body .container .panel:nth-of-type(2) h3 {
+  background-color: #ff8100;
+}
+
+body .container .panel:nth-of-type(3) h3 {
+  background-color: #0a009b;
+}
+
+body .container .panel:nth-of-type(4) h3 {
+  background-color: #7b85ff;
+}
+
+body .container .panel:nth-of-type(5) h3 {
+  background-color: #ff003b;
+}
+
+body .container .panel h3 {
+  font-size: 24px;
+  margin: 0;
+  opacity: 0;
+  padding: 6px 12px;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+body .container .panel.active {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
+body .container .panel.active h3 {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in 0.4s;
+  transition: opacity 0.3s ease-in 0.4s;
+}
