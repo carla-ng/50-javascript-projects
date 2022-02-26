@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+$line-border-empty: #e0e0e0;
+$line-border-fill: #54b300;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        text-align: center;
+
+        .progress-container {
+            margin-bottom: 30px;
+            max-width: 99%;
+            position: relative;
+            width: 310px;
+            
+
+            display: flex;
+            justify-content: space-between;
+
+            &:before {
+                background-color: $line-border-empty;
+                content: '';
+                height: 4px;
+                transform: translateY(-50%);
+                width: 99%;
+                z-index: -1;
+                
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            .progress {
+                background-color: $line-border-fill;
+                height: 4px;
+                transform: translateY(-50%);
+                transition: 0.4s ease;
+                width: 0%;
+                z-index: -1;
+                
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            .circle {
+                background-color: #fff;
+                border: 3px solid $line-border-empty;
+                border-radius: 50%;
+                color: #999;
+                height: 35px;
+                transition: 0.4s ease;
+                width: 35px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &.active {
+                    border-color: $line-border-fill;
+                    color: $line-border-fill;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .btn {
+            background-color: $line-border-fill;
+            border: 0;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 14px;
+            margin: 5px;
+            padding: 8px 35px;
+
+            &:active {
+                transform: scale(0.98);
+            }
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:disabled {
+                background-color: $line-border-empty;
+                cursor: not-allowed;
+            }
+        }
+    }
+}
