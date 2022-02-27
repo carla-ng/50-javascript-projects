@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffdd0;
+    color: #222;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+
+    .container {
+        background-color: #fafafa;
+        box-shadow: -1px 1px 20px 5px #bdbdbd;
+        padding: 50px;
+        transform-origin: top left;
+        transition: transform 0.5s linear;
+
+        min-height: 100vh;
+        width: 100vw;
+
+        &.show-nav {
+            transform: rotate(-20deg);
+
+            .circle {
+                transform: rotate(-70deg);
+            }
+
+            & + nav li {
+                transform: translateX(0);
+                transition-delay: 0.3s;
+            }
+        }
+
+        .circle-container {
+            position: fixed;
+            top: -100px;
+            left: -100px;
+
+            .circle {
+                background-color: #ff7979;
+                border-radius: 50%;
+                height: 200px;
+                position: relative;
+                transition: transform 0.5s linear;
+                width: 200px;
+
+                button {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+
+                    background: transparent;
+                    border: 0;
+                    color: #fff;
+                    cursor: pointer;
+                    font-size: 26px;
+                    height: 100px;
+
+                    &:focus { outline: none; }
+
+                    &#open {
+                        left: 60%;
+                    }
+
+                    &#close {
+                        top: 60%;
+                        transform: rotate(90deg);
+                        transform-origin: top left;
+                    }
+                }
+            }
+
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 50px auto;
+
+            h1 {
+                margin: 0;
+            }
+
+            small {
+                color: #555;
+                font-style: italic;
+            }
+
+            p {
+                color: #333;
+                line-height: 1.5;
+            }
+
+            img {
+                width: 250px;
+            }
+        }
+    }
+
+     nav {
+         position: absolute;
+         bottom: 40px;
+         left: 0;
+         z-index: 100;
+
+         ul {
+             list-style-type: none;
+             padding-left: 30px;
+
+             li {
+                 color: #6400a3;
+                 font-weight: 600;
+                 margin: 40px 0;
+                 text-transform: uppercase;
+                 transform: translateX(-100%);
+                 transition: transform 0.4s ease-in;
+
+                 & + li {
+                     margin-left: 15px;
+                     transform: translateX(-150%);
+                 }
+
+                 & + li + li {
+                     margin-left: 30px;
+                     transform: translateX(-200%);
+                 }
+
+                 i {
+                     font-size: 20px;
+                     margin-right: 10px;
+                 }
+             }
+         }
+     }
+
+}

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fffdd0;
+  color: #222;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body .container {
+  background-color: #fafafa;
+  -webkit-box-shadow: -1px 1px 20px 5px #bdbdbd;
+          box-shadow: -1px 1px 20px 5px #bdbdbd;
+  padding: 50px;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+body .container.show-nav {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+body .container.show-nav .circle {
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+
+body .container.show-nav + nav li {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+body .container .circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+body .container .circle-container .circle {
+  background-color: #ff7979;
+  border-radius: 50%;
+  height: 200px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+  width: 200px;
+}
+
+body .container .circle-container .circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 26px;
+  height: 100px;
+}
+
+body .container .circle-container .circle button:focus {
+  outline: none;
+}
+
+body .container .circle-container .circle button#open {
+  left: 60%;
+}
+
+body .container .circle-container .circle button#close {
+  top: 60%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+body .container .content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+body .container .content h1 {
+  margin: 0;
+}
+
+body .container .content small {
+  color: #555;
+  font-style: italic;
+}
+
+body .container .content p {
+  color: #333;
+  line-height: 1.5;
+}
+
+body .container .content img {
+  width: 250px;
+}
+
+body nav {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+body nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+body nav ul li {
+  color: #6400a3;
+  font-weight: 600;
+  margin: 40px 0;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+}
+
+body nav ul li + li {
+  margin-left: 15px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+body nav ul li + li + li {
+  margin-left: 30px;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+body nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
