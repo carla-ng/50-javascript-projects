@@ -6,7 +6,7 @@ let load     = 0
 let interval = setInterval(blurring, 25)  // every 25 milliseconds
 
 
-// Increment load value to remove blur from image (til 100% is reached)
+// Increment load value to remove blur from image (till 100% is reached)
 function blurring() {
     load++
 
