@@ -1,0 +1,80 @@
+@import '../../common/css/variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+$left-background-color: rgba(87, 84, 236, 0.3);
+$right-background-color: rgba(255, 108, 108, 0.3);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+    .container {
+        background: #333;
+        display: flex;
+        position: relative;
+
+        height: 100%;
+        width: 100%;
+
+        // @media(max-width: $media-query-breakpoint-mobile-max) {
+        //     flex-direction: column;
+        // }
+
+        .split {
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: absolute;
+
+            height: 100%;
+            width: 50%;
+
+            h1 {
+                color: #fff;
+                font-size: 42px;
+                transform: translateX(-50%);
+                white-space: nowrap;
+
+                position: absolute;
+                left: 50%;
+                top: 20%;
+            }
+
+            &.left {
+                background-image: url('https://images.unsplash.com/photo-1605835963874-a7c87f56259e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                left: 0;
+
+                &:before {
+                    content: '';
+
+                    height: 100%;
+                    width: 100%;
+
+                    background-color: $left-background-color;
+                    position: absolute;
+                }
+            }
+
+            &.right {
+                background-image: url('https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+                right: 0;
+
+                &:before {
+                    content: '';
+
+                    height: 100%;
+                    width: 100%;
+
+                    background-color: $right-background-color;
+                    position: absolute;
+                  }
+            }
+        }
+    }
+}
