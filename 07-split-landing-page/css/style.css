@@ -21,6 +21,22 @@ body .container {
   width: 100%;
 }
 
+body .container.hover-left .left {
+  width: 75%;
+}
+
+body .container.hover-left .right {
+  width: 25%;
+}
+
+body .container.hover-right .right {
+  width: 75%;
+}
+
+body .container.hover-right .left {
+  width: 25%;
+}
+
 body .container .split {
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,6 +57,48 @@ body .container .split h1 {
   top: 20%;
 }
 
+@media (max-width: 800px) {
+  body .container .split h1 {
+    font-size: 32px;
+    top: 30%;
+  }
+}
+
+body .container .split .btn {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  border: #fff solid 3px;
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 300px;
+  overflow: hidden;
+  padding: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  body .container .split .btn {
+    padding: 20px;
+    top: 45%;
+  }
+}
+
 body .container .split.left {
   background-image: url("https://images.unsplash.com/photo-1605835963874-a7c87f56259e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   left: 0;
@@ -54,6 +112,11 @@ body .container .split.left:before {
   position: absolute;
 }
 
+body .container .split.left .btn:hover {
+  background-color: #5754ec;
+  border-color: #5754ec;
+}
+
 body .container .split.right {
   background-image: url("https://images.unsplash.com/photo-1617096200347-cb04ae810b1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   right: 0;
@@ -65,4 +128,14 @@ body .container .split.right:before {
   width: 100%;
   background-color: rgba(255, 108, 108, 0.3);
   position: absolute;
+}
+
+body .container .split.right .btn:hover {
+  background-color: #ff6c6c;
+  border-color: #ff6c6c;
+}
+
+body .container .split.right, body .container .split.right:before, body .container .split.left, body .container .split.left:before {
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }

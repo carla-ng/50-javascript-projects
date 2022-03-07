@@ -1,8 +1,12 @@
-@import '../../common/css/variables';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
 
+
 $left-background-color: rgba(87, 84, 236, 0.3);
+$left-button-hover-color: rgba(87, 84, 236, 1);
+
 $right-background-color: rgba(255, 108, 108, 0.3);
+$right-button-hover-color: rgba(255, 108, 108, 1);
+
 
 * {
     box-sizing: border-box;
@@ -22,9 +26,11 @@ body {
         height: 100%;
         width: 100%;
 
-        // @media(max-width: $media-query-breakpoint-mobile-max) {
-        //     flex-direction: column;
-        // }
+        &.hover-left .left { width: 75%; }
+        &.hover-left .right { width: 25%; }
+
+        &.hover-right .right { width: 75%; }
+        &.hover-right .left { width: 25%; }
 
         .split {
             background-repeat: no-repeat;
@@ -44,6 +50,39 @@ body {
                 position: absolute;
                 left: 50%;
                 top: 20%;
+
+                @media (max-width: 800px) {
+                    font-size: 32px;
+                    top: 30%;
+                }
+            }
+
+            .btn {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                color: #fff;
+                border: #fff solid 3px;
+                font-size: 16px;
+                font-weight: bold;
+                max-width: 300px;
+                overflow: hidden;
+                padding: 24px;
+                text-decoration: none;
+                text-transform: uppercase;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                width: 50%;
+
+                @media (max-width: 800px) {
+                    padding: 20px;
+                    top: 45%;
+                }
             }
 
             &.left {
@@ -59,6 +98,11 @@ body {
                     background-color: $left-background-color;
                     position: absolute;
                 }
+
+                .btn:hover {
+                    background-color: $left-button-hover-color;
+                    border-color: $left-button-hover-color;
+                }
             }
 
             &.right {
@@ -73,8 +117,19 @@ body {
 
                     background-color: $right-background-color;
                     position: absolute;
-                  }
+                }
+
+                .btn:hover {
+                    background-color: $right-button-hover-color;
+                    border-color: $right-button-hover-color;
+                }
             }
+
+            &.right, &.right:before,
+            &.left, &.left:before {
+                transition: all 1000ms ease-in-out;
+            }
+
         }
     }
 }
