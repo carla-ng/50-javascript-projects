@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+$form-wave-font-color: #000;
+$form-wave-active-font-color: rgb(255, 93, 174);
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: steelblue;
-    color: #fff;
+    background-color: rgb(159, 255, 226);
+    color: $form-wave-font-color;
     font-family: 'Muli', sans-serif;
     height: 100vh;
     margin: 0;
@@ -18,13 +22,86 @@ body {
     justify-content: center;
 
     .container {
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(255, 255, 255, 0.52);
         border-radius: 5px;
         padding: 20px 40px;
 
         h1 {
             margin-bottom: 30px;
             text-align: center;
+        }
+
+        form {
+            .form-control {
+                margin: 20px 0 40px;
+                position: relative;
+                width: 300px;
+
+                input {
+                    background-color: transparent;
+                    border: 0;
+                    border-bottom: 2px $form-wave-font-color solid;
+                    color: $form-wave-font-color;
+                    display: block;
+                    font-size: 18px;
+                    padding: 15px 0;
+                    width: 100%;
+
+                    &:focus, &:valid {
+                        border-bottom-color: $form-wave-active-font-color;
+                        outline: 0;
+                    }
+
+                    &:focus + label span,
+                    &:valid + label span {
+                        color: $form-wave-active-font-color;
+                        transform: translateY(-30px);
+                    }
+                }
+
+                label {
+                    position: absolute;
+                    top: 15px;
+                    left: 0;
+
+                    span {
+                        display: inline-block;
+                        font-size: 18px;
+                        min-width: 5px;
+                        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    }
+                }
+            }
+        }
+
+        .btn {
+            background: $form-wave-active-font-color;
+            border: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 15px;
+            width: 100%;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+
+        p.text {
+            margin-bottom: 30px;
+            text-align: center;
+
+            a {
+                color: $form-wave-active-font-color;
+                text-decoration: none;
+            }
         }
     }
 }
