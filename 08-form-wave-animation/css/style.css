@@ -27,9 +27,11 @@ body {
 }
 
 body .container {
-  background-color: rgba(255, 255, 255, 0.52);
+  background-color: #fff;
   border-radius: 5px;
+  max-width: 380px;
   padding: 20px 40px;
+  width: 95%;
 }
 
 body .container h1 {
@@ -40,7 +42,6 @@ body .container h1 {
 body .container form .form-control {
   margin: 20px 0 40px;
   position: relative;
-  width: 300px;
 }
 
 body .container form .form-control input {
@@ -50,7 +51,7 @@ body .container form .form-control input {
   color: #000;
   display: block;
   font-size: 18px;
-  padding: 15px 0;
+  padding: 15px 0 5px 0;
   width: 100%;
 }
 
@@ -70,6 +71,7 @@ body .container form .form-control label {
   position: absolute;
   top: 15px;
   left: 0;
+  font-weight: bold;
 }
 
 body .container form .form-control label span {
@@ -88,6 +90,7 @@ body .container .btn {
   display: inline-block;
   font-family: inherit;
   font-size: 16px;
+  font-weight: bold;
   padding: 15px;
   width: 100%;
 }
@@ -101,12 +104,21 @@ body .container .btn:active {
           transform: scale(0.98);
 }
 
+body .container .btn:hover {
+  background: rgba(255, 93, 174, 0.8);
+}
+
 body .container p.text {
-  margin-bottom: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 body .container p.text a {
   color: #ff5dae;
   text-decoration: none;
+}
+
+body .container p.text a:hover {
+  opacity: 0.8;
 }
