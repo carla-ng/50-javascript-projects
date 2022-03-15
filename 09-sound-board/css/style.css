@@ -25,11 +25,22 @@ body {
           justify-content: center;
 }
 
-@media (max-width: 768px) {
-  body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+body .btn {
+  background-color: rebeccapurple;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  margin: 16px;
+  padding: 20px 40px;
+}
+
+body .btn:hover {
+  opacity: 0.9;
+}
+
+body .btn:focus {
+  outline: none;
 }

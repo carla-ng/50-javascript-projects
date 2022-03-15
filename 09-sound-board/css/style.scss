@@ -16,9 +16,18 @@ body {
     align-items: center;
     justify-content: center;
 
-    @media(max-width: 768px) {
-        flex-direction: column;
-    }
+    .btn {
+        background-color: rebeccapurple;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 18px;
+        margin: 16px;
+        padding: 20px 40px;
 
-    
+        &:hover { opacity: 0.9; }
+        &:focus { outline: none; }
+    }
 }
