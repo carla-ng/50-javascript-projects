@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #a164df;
+  background-color: #fff2b8;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
   margin: 0;
@@ -26,7 +26,7 @@ body {
 }
 
 body .btn {
-  background-color: rebeccapurple;
+  background-color: rgba(201, 33, 137, 0.8);
   border: none;
   border-radius: 5px;
   color: #fff;
