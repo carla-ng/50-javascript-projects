@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+$accent-color-01: #ee7221;
+$accent-color-02: #6523b6;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0f1fd;
+    font-family: 'Muli', sans-serif;
+
+    h1 {
+        color: $accent-color-02;
+        margin: 50px 0 30px;
+        text-align: center;
+    }
+
+    .faq-container {
+        margin: 0 auto;
+        max-width: 600px;
+
+        .faq {
+            background-color: rgba(255,255,255,0.6);
+            border: 3px solid #f9c921;
+            border-radius: 10px;
+            margin: 20px 0;
+            overflow: hidden;
+            padding: 30px;
+            position: relative;
+            transition: 0.3s ease;
+
+            .faq-title {
+                margin: 0 35px 0 0;
+            }
+
+            .faq-answer {
+                display: none;
+                margin: 30px 0 0;
+            }
+
+            .faq-toggle {
+                background-color: transparent;
+                border: 0;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 0;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                position: absolute;
+                top: 30px;
+                right: 30px;
+
+                height: 30px;
+                width: 30px;
+
+                .fa-times {
+                    display: none;
+                }
+
+                &:focus {
+                    outline: 0;
+                }
+            }
+
+            &.active {
+                background-color: #fff;
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+
+                .faq-answer {
+                    display: block;
+                }
+
+                .faq-toggle {
+                    background-color: rgba($accent-color-01, 0.6);
+                    border-radius: 50%;
+                    color: #fff;
+
+                    .fa-times {
+                        display: block;
+                    }
+                    .fa-chevron-down {
+                        display: none;
+                    }
+                }
+            
+                &:before, &:after {
+                    content: '\f075';
+                    color: $accent-color-02;
+                    font-family: 'Font Awesome 5 Free';
+                    font-size: 7rem;
+                    opacity: 0.2;
+                    z-index: 0;
+
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                }
+
+                &:before {
+                    color: $accent-color-01;
+                    left: -30px;
+                    top: -10px;
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+}
