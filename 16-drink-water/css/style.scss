@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400,600&display=swap');
+
+$border-color: #144fc6;
+$fill-color: #6ab3f8;
+
+@mixin cup-styles {
+    background-color: #fff;
+    border-radius: 0 0 40px 40px;
+    border: 4px solid $border-color;
+    color: $border-color;
+    height: 330px;
+    margin: 30px 0;
+    overflow: hidden;
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+} 
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3494e4;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 { margin: 10px 0 0; }
+    
+    h3 {
+        font-weight: 400;
+        margin: 10px 0;
+    }
+
+    .big-cup {
+        @include cup-styles;
+
+        .remained {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+
+            text-align: center;
+            transition: 0.3s ease;
+
+            span {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            small { font-size: 12px; }
+        }
+
+        .percentage {
+            background-color: $fill-color;
+            font-size: 30px;
+            font-weight: bold;
+            height: 0;
+            transition: 0.3s ease;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .text {
+        margin: 0 0 16px;
+        text-align: center;
+    }
+
+    .cups {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        width: 280px;
+
+        .cup {
+            @include cup-styles;
+
+            &.cup-small {
+                align-items: center;
+                justify-content: center;
+
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 0 0 15px 15px;
+                cursor: pointer;
+                font-size: 14px;
+                height: 95px;
+                margin: 5px;
+                text-align: center;
+                transition: 0.3s ease;
+                width: 50px;
+
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+    
+                &.full {
+                    background-color: $fill-color;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
