@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #22254b;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+body header {
+  background-color: #373b69;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  body header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body header span {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 0 6px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 992px) {
+  body header #form {
+    margin-top: 12px;
+    width: 100%;
+  }
+}
+
+body header #form .search {
+  background-color: transparent;
+  border-radius: 15px;
+  border: 2px solid #22254b;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+body header #form .search::-webkit-input-placeholder {
+  color: #7378c5;
+}
+
+body header #form .search:-ms-input-placeholder {
+  color: #7378c5;
+}
+
+body header #form .search::-ms-input-placeholder {
+  color: #7378c5;
+}
+
+body header #form .search::placeholder {
+  color: #7378c5;
+}
+
+body header #form .search:focus {
+  outline: none;
+  background-color: #22254b;
+}
+
+@media (max-width: 992px) {
+  body header #form .search {
+    width: 100%;
+  }
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 12px auto;
+  max-width: 2000px;
+}
+
+body main .movie {
+  background-color: #373b69;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+}
+
+body main .movie:hover .overview {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body main .movie img {
+  width: 100%;
+}
+
+body main .movie h3 {
+  margin-top: 0;
+}
+
+body main .movie .movie-info {
+  color: #eee;
+  gap: 0.2rem;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .movie .movie-info span {
+  background-color: var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+body main .movie .movie-info span.green {
+  color: #51e151;
+}
+
+body main .movie .movie-info span.orange {
+  color: orange;
+}
+
+body main .movie .movie-info span.red {
+  color: red;
+}
+
+body main .movie .overview {
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
