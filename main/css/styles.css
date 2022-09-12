@@ -3,7 +3,6 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   margin: 30px 12px;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +15,7 @@ body .container {
   width: 90vw;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 992px) {
   body .container {
     max-width: 800px;
     width: 60vw;

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body::before {
+  background-color: rgba(0, 0, 0, 0.7);
+  content: '';
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+body .slider-container {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+  width: 70vw;
+}
+
+body .slider-container .slide {
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  left: -15vw;
+  opacity: 0;
+  position: absolute;
+  top: -15vh;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 100vw;
+  z-index: 1;
+}
+
+body .slider-container .slide.active {
+  opacity: 1;
+}
+
+body .slider-container .arrow {
+  background-color: transparent;
+  border: 2px solid orange;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .slider-container .arrow:focus {
+  outline: 0;
+}
+
+body .slider-container .arrow.left-arrow {
+  left: calc(15vw - 65px);
+}
+
+body .slider-container .arrow.right-arrow {
+  right: calc(15vw - 65px);
+}
