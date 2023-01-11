@@ -1,25 +1,145 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
+  color: #383131;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 50px;
+}
+
+body .container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+body nav {
+  background-color: #383131;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+body nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body nav .container .logo a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style-type: none;
+}
+
+body nav .container ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body nav .container ul li a.current, body nav .container ul li a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+body nav.active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body nav.active .container {
+  padding: 10px 0;
+}
+
+body nav.active .container .logo a, body nav.active .container ul li a {
+  color: #000;
+}
+
+body .hero {
+  background-image: url("https://images.unsplash.com/photo-1453227588063-bb302b62f50b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  z-index: -2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+body .hero .container h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+}
+
+body .hero .container p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+body section h2, body section h3 {
+  font-size: 150%;
+  margin: 20px 0;
+}
+
+body section p {
+  color: #555;
+  letter-spacing: 1.2px;
+  line-height: 30px;
 }
