@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+}
+
+body .slider-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+body .slider-container .left-slide {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .slider-container .left-slide > div {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .slider-container .left-slide > div h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+body .slider-container .right-slide {
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
+
+body .slider-container .right-slide > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+body .slider-container .action-buttons button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  z-index: 100;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+}
+
+body .slider-container .action-buttons button:hover {
+  color: #222;
+}
+
+body .slider-container .action-buttons button:focus {
+  outline: none;
+}
+
+body .slider-container .action-buttons button.up-button {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+body .slider-container .action-buttons button.down-button {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
