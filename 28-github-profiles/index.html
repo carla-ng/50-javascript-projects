@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Github Profiles</title>
+</head>
+
+<body>
+    <form class="user-form" id="form">
+        <input type="text" id="search" placeholder="Search Github user...">
+    </form>
+
+    <main id="main">
+        <div class="card">
+            <div class="avatar-container">
+                <img class="avatar" src="https://randomuser.me/api/portraits/women/32.jpg" alt="User photo">
+            </div>
+            <div class="user-info">
+                <h2>janedoe</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum necessitatibus recusandae.</p>
+
+                <ul>
+                    <li>300 <strong>Followers</strong></li>
+                    <li>100 <strong>Following</strong></li>
+                    <li>30 <strong>Repos</strong></li>
+                </ul>
+
+                <div id="repos-container">
+                    <a href="#" class="repo">Repo 1</a>
+                    <a href="#" class="repo">Repo 2</a>
+                    <a href="#" class="repo">Repo 3</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
