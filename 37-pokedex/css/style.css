@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #efefbb;
+  background: -webkit-gradient(linear, left top, right top, from(#d4d3dd), to(#efefbb));
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body h1 {
+  letter-spacing: 3px;
+}
+
+body .poke-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+body .poke-container .pokemon {
+  background-color: #eee;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+          box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+body .poke-container .pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+body .poke-container .pokemon .img-container img {
+  margin-top: 20px;
+  max-width: 90%;
+}
+
+body .poke-container .pokemon .info {
+  margin-top: 20px;
+}
+
+body .poke-container .pokemon .info .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+
+body .poke-container .pokemon .info .name {
+  letter-spacing: 1px;
+  margin: 15px 0 7px;
+}
