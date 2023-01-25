@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .magic {
+        background-color: #f5354b;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        border: 0;
+        border-radius: 3px;
+        font-size: 16px;
+        padding: 12px 20px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        letter-spacing: 1px;
+        box-shadow: 3px 3px rgba(245, 114, 114, 0.6);
+        z-index: 100;
+
+        &:focus { outline: none; }
+        &:active {
+            box-shadow: none;
+            transform: translateY(2px);
+        }
+    }
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 500px;
+        position: relative;
+        transition: 0.4s ease;
+        width: 500px;
+
+        &.big {
+            height: 600px;
+            width: 600px;
+        }
+
+        .box {
+            background-image: url('https://media4.giphy.com/media/4XSc0NkhKJQhW/giphy.gif?cid=ecf05e47we3bjqhph3vnqpilr04x2q6g1etfws7b64s8y7h2&rid=giphy.gif&ct=g');
+            background-repeat: no-repeat;
+            background-size: 500px 500px;
+            position: relative;
+            height: 125px;
+            width: 125px;
+            transition: 0.4s ease;
+
+            &::after {
+                content: '';
+                background-color: #f5354b;
+                height: 100%;
+                position: absolute;
+                right: -15px;
+                top: 8px;
+                transform: skewY(45deg);
+                width: 15px;
+              }
+              
+              &::before {
+                content: '';
+                background-color: #f5354b;
+                bottom: -15px;
+                height: 15px;
+                left: 8px;
+                position: absolute;
+                transform: skewX(45deg);
+                width: 100%;
+            }
+        }
+
+        &.big .box {  transform: rotateZ(360deg); }
+    }
+
+}
