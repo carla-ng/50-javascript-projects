@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .testimonial-container {
+  background-color: #c7468a;
+  border-radius: 15px;
+  color: #fff;
+  margin: 20px auto;
+  max-width: 768px;
+  padding: 50px 80px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  body .testimonial-container {
+    padding: 20px 30px;
+  }
+}
+
+body .testimonial-container .progress-bar {
+  -webkit-animation: grow 10s linear infinite;
+          animation: grow 10s linear infinite;
+  background-color: #fff;
+  height: 4px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  width: 100%;
+}
+
+body .testimonial-container .fa-quote {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 28px;
+  position: absolute;
+  top: 70px;
+}
+
+body .testimonial-container .fa-quote.fa-quote-right {
+  left: 40px;
+}
+
+body .testimonial-container .fa-quote.fa-quote-left {
+  right: 40px;
+}
+
+@media (max-width: 768px) {
+  body .testimonial-container .fa-quote {
+    display: none;
+  }
+}
+
+body .testimonial-container .testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+body .testimonial-container .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .testimonial-container .user .user-image {
+  border-radius: 50%;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 75px;
+}
+
+body .testimonial-container .user .user-details {
+  margin-left: 10px;
+}
+
+body .testimonial-container .user .user-details .username {
+  margin: 0;
+}
+
+body .testimonial-container .user .user-details .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes grow {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
