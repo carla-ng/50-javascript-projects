@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .nav-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+
+        &.open-btn {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+    }
+
+    .text { text-transform: uppercase; }
+
+    .logo { width: 200px; }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+
+        &.visible { transform: translateX(0); }
+
+        .close-btn {
+            opacity: 0.3;
+            position: absolute;
+            top: 40px;
+            right: 30px;
+        }
+
+        .list {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                    color: rgb(34, 31, 31);
+                    font-size: 14px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+
+    .nav-black {
+        background-color: rgb(34, 31, 31);
+        max-width: 480px;
+        min-width: 320px;
+        transition-delay: 0.4s;
+        width: 60%;
+
+        &.visible { transition-delay: 0s; }
+    }
+      
+    .nav-red {
+        background-color: rgb(229, 9, 20);
+        transition-delay: 0.2s;
+        width: 95%;
+
+        &.visible { transition-delay: 0.2s; }
+    }
+
+    .nav-white {
+        background-color: #fff;
+        padding: 40px;
+        position: relative;
+        transition-delay: 0s;
+        width: 95%;
+
+        &.visible { transition-delay: 0.4s; }
+    }
+
+}
