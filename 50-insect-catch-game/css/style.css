@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #516dff;
+  color: #fff;
+  font-family: 'Press Start 2P', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+body a {
+  color: #fff;
+}
+
+body h1 {
+  line-height: 1.4;
+}
+
+body .btn {
+  background-color: #fff;
+  border: 0;
+  color: #516dff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 15px 20px;
+}
+
+body .btn:hover {
+  opacity: 0.9;
+}
+
+body .btn:focus {
+  outline: 0;
+}
+
+body .screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  -webkit-transition: margin 0.5s ease-out;
+  transition: margin 0.5s ease-out;
+  width: 100vw;
+}
+
+body .screen.up {
+  margin-top: -100vh;
+}
+
+body .screen .insects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+body .screen .insects-list li {
+  margin: 10px;
+}
+
+body .screen .insects-list li .choose-insect-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  width: 150px;
+  height: 150px;
+}
+
+body .screen .insects-list li .choose-insect-btn:hover {
+  background-color: #fff;
+  color: #516dff;
+}
+
+body .screen .insects-list li .choose-insect-btn:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+body .screen .insects-list li .choose-insect-btn img {
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100px;
+}
+
+body .screen.game-container {
+  position: relative;
+}
+
+body .screen.game-container .time, body .screen.game-container .score {
+  position: absolute;
+  top: 20px;
+}
+
+body .screen.game-container .time {
+  left: 20px;
+}
+
+body .screen.game-container .score {
+  right: 20px;
+}
+
+body .screen.game-container .message {
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  line-height: 1.7;
+  opacity: 0;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  -webkit-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+  width: 100%;
+  z-index: 100;
+}
+
+body .screen.game-container .message.visible {
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+body .screen.game-container .insect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  height: 100px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  width: 100px;
+}
+
+body .screen.game-container .insect.caught {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+body .screen.game-container .insect img {
+  height: 100px;
+  width: 100px;
+}
