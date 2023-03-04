@@ -1,9 +1,5 @@
-![](https://github.com/50-javascript-projects/assets/readme_banner.jpg)
-
-
 # 50 JavaScript Projects
-50 projects using HTML, SCSS and JavaScript, from small animations to mini-apps.
-
+50 projects using HTML, SCSS and JavaScript, from simple animations to mini-apps.
 
 <br/>
 
