@@ -1,13 +1,35 @@
+![](https://github.com/50-javascript-projects/assets/readme_banner.jpg)
+
+
 # 50 JavaScript Projects
-50 projects using HTML, SCSS and JavaScript
+50 projects using HTML, SCSS and JavaScript, from small animations to mini-apps.
+
 
 <br/>
 
-## Demo
+## :globe_with_meridians: Demo
 https://carla-ng.github.io/50-javascript-projects/
 
+<br/>
+
+## :hammer_and_pick: Built With
+* JavaScript
+* [icanhazdadjoke](https://icanhazdadjoke.com/) for Dad Jokes
+* [The Movie Database](https://www.themoviedb.org/) for Movie App
+* [Random User Generator](https://randomuser.me/) for a few of the projects
+* [Github Users](https://api.github.com/) for Github Profiles
+* [PokéApi](https://pokeapi.co/) for Pokédex
 
 <br/>
 
-## Credits
-Brad Traversy, Florin Pop - [50 Projects In 50 Days - HTML, CSS & JavaScript](https://www.udemy.com/course/50-projects-50-days/)
+## :mag: Improvements / Features to Add
+* Make more attractive index file
+* Fix little bugs found in some of the projects
+* Mobile support for every single project
+* Cross Browser testing
+
+<br/>
+
+## :clap: Acknowledgments
+* Project idea by Brad Traversy, Florin Pop - [50 Projects In 50 Days - HTML, CSS & JavaScript](https://www.udemy.com/course/50-projects-50-days/)
+* Images from [Unsplash](https://unsplash.com/)
