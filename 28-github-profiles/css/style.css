@@ -1,47 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 body .user-form {
   max-width: 700px;
   width: 100%;
 }
-
 @media (max-width: 500px) {
   body .user-form {
     max-width: 400px;
   }
 }
-
 body .user-form input {
   background-color: rgba(33, 42, 114, 0.8);
   border-radius: 10px;
   border: none;
-  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
   color: #fff;
   display: block;
   font-family: inherit;
@@ -50,100 +36,63 @@ body .user-form input {
   padding: 1rem;
   width: 100%;
 }
-
-body .user-form input::-webkit-input-placeholder {
+body .user-form input::-moz-placeholder {
   color: #bbb;
 }
-
-body .user-form input:-ms-input-placeholder {
-  color: #bbb;
-}
-
-body .user-form input::-ms-input-placeholder {
-  color: #bbb;
-}
-
 body .user-form input::placeholder {
   color: #bbb;
 }
-
 body .user-form input:focus {
   outline: none;
 }
-
 body #main .card {
   background-color: #c1627c;
   border-radius: 20px;
-  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 0 1.5rem;
   max-width: 800px;
   padding: 3rem;
 }
-
 @media (max-width: 500px) {
   body #main .card {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    flex-direction: column;
   }
 }
-
 body #main .card h3 {
   letter-spacing: 1px;
 }
-
 body #main .card .avatar-container img.avatar {
   border-radius: 50%;
   border: 6px solid #212a72;
   height: 150px;
   width: 150px;
 }
-
 body #main .card .user-info {
   color: #eee;
   margin-left: 2rem;
 }
-
 body #main .card .user-info h2 {
   margin-top: 0;
 }
-
 body #main .card .user-info ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style-type: none;
   max-width: 400px;
   padding: 0;
 }
-
 body #main .card .user-info ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 0.5rem;
 }
-
 body #main .card .user-info ul li strong {
   font-size: 0.9rem;
   margin-left: 0.5rem;
   letter-spacing: 1px;
 }
-
 body #main .card .user-info #repos-container .repo {
   background-color: #212a72;
   color: #fff;

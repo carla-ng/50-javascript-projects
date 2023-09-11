@@ -1,31 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #9fffe2;
+  background-color: rgb(159, 255, 226);
   color: #000;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 body .container {
   background-color: #fff;
   border-radius: 5px;
@@ -33,17 +22,14 @@ body .container {
   padding: 20px 40px;
   width: 95%;
 }
-
 body .container h1 {
   margin-bottom: 30px;
   text-align: center;
 }
-
 body .container form .form-control {
   margin: 20px 0 40px;
   position: relative;
 }
-
 body .container form .form-control input {
   background-color: transparent;
   border: 0;
@@ -54,36 +40,28 @@ body .container form .form-control input {
   padding: 15px 0 5px 0;
   width: 100%;
 }
-
 body .container form .form-control input:focus, body .container form .form-control input:valid {
-  border-bottom-color: #ff5dae;
+  border-bottom-color: rgb(255, 93, 174);
   outline: 0;
 }
-
-body .container form .form-control input:focus + label span,
-body .container form .form-control input:valid + label span {
-  color: #ff5dae;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+body .container form .form-control input:focus + label span, body .container form .form-control input:valid + label span {
+  color: rgb(255, 93, 174);
+  transform: translateY(-30px);
 }
-
 body .container form .form-control label {
   position: absolute;
   top: 15px;
   left: 0;
   font-weight: bold;
 }
-
 body .container form .form-control label span {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
-  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 body .container .btn {
-  background: #ff5dae;
+  background: rgb(255, 93, 174);
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -94,31 +72,24 @@ body .container .btn {
   padding: 15px;
   width: 100%;
 }
-
 body .container .btn:focus {
   outline: 0;
 }
-
 body .container .btn:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
-
 body .container .btn:hover {
   background: rgba(255, 93, 174, 0.8);
 }
-
 body .container p.text {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
 }
-
 body .container p.text a {
-  color: #ff5dae;
+  color: rgb(255, 93, 174);
   text-decoration: none;
 }
-
 body .container p.text a:hover {
   opacity: 0.8;
 }

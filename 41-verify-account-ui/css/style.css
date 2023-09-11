@@ -1,26 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #fbfcfe;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 body .container {
   background-color: #fff;
   border-radius: 10px;
@@ -29,27 +21,17 @@ body .container {
   padding: 30px 50px;
   text-align: center;
 }
-
 body .container .code-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 40px 0;
 }
-
 @media (max-width: 600px) {
   body .container .code-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
-
 body .container .code-container .code {
   -moz-appearance: textfield;
   border-radius: 5px;
@@ -62,18 +44,14 @@ body .container .code-container .code {
   text-align: center;
   width: 100px;
 }
-
 body .container .code-container .code::-webkit-outer-spin-button, body .container .code-container .code::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 body .container .code-container .code:valid {
   border-color: #3498db;
-  -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
 }
-
 @media (max-width: 600px) {
   body .container .code-container .code {
     font-size: 60px;
@@ -81,7 +59,6 @@ body .container .code-container .code:valid {
     max-width: 70px;
   }
 }
-
 body .container .info {
   background-color: #eaeaea;
   border-radius: 5px;

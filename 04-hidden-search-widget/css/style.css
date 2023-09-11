@@ -1,68 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #ffc0cb;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 body .search {
   position: relative;
   height: 555px;
 }
-
 body .search .input {
   background-color: #fff;
   border: 0;
   border-radius: 6px;
   font-size: 18px;
   padding: 15px;
-  -webkit-transition: width 0.3s ease;
   transition: width 0.3s ease;
   height: 55px;
   width: 55px;
 }
-
 body .search .btn {
   background-color: #fff;
   border: 0;
   border-radius: 6px;
   cursor: pointer;
   font-size: 24px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   position: absolute;
   top: 0;
   left: 0;
   height: 55px;
   width: 55px;
 }
-
 body .search .btn i {
   color: #484848;
 }
-
 body .search input:focus, body .search .btn:focus {
   outline: none;
 }
-
 body .search.active input {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 0;
@@ -70,12 +53,10 @@ body .search.active input {
   border-top-right-radius: 0;
   width: 200px;
 }
-
 body .search.active .btn {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 6px;
   border-top-left-radius: 0;
   border-top-right-radius: 6px;
-  -webkit-transform: translateX(198px);
-          transform: translateX(198px);
+  transform: translateX(198px);
 }

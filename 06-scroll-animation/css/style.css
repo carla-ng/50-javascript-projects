@@ -1,68 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #fbf8d5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 body h1 {
   margin: 10px;
 }
-
 body .box {
   background-color: #c9659a;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   color: #fff;
   margin: 10px;
-  -webkit-transform: translateX(400%);
-          transform: translateX(400%);
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
+  transform: translateX(400%);
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   height: 200px;
   width: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 body .box:nth-of-type(even) {
-  -webkit-transform: translateX(-400%);
-          transform: translateX(-400%);
+  transform: translateX(-400%);
 }
-
 body .box.show {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
-
 body .box h2 {
   font-size: 45px;
 }

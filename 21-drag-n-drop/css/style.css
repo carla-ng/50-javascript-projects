@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -8,26 +7,15 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 @media (max-width: 992px) {
   body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 body .empty {
   background: #fff;
   border: solid 3px #000;
@@ -35,18 +23,15 @@ body .empty {
   margin: 10px;
   width: 150px;
 }
-
 body .empty .fill {
   background-image: url("https://images.unsplash.com/photo-1519333796630-4b7d19ad1bb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&q=80");
   cursor: pointer;
   height: 145px;
   width: 145px;
 }
-
 body .hold {
   border: solid 5px #ccc;
 }
-
 body .hovered {
   background-color: #999;
   border-color: #fff;
