@@ -1,12 +1,18 @@
+<p align="center">
+  <img src="https://github.com/carla-ng/50-javascript-projects/blob/master/assets/readme_image_1.jpg?raw=true" alt="50 JavaScript Projects preview">
+</p>
+
+<br>
+
 # 50 JavaScript Projects
 50 projects using HTML, SCSS and JavaScript, from simple animations to mini-apps.
 
-<br/>
+<br>
 
 ## :globe_with_meridians: Demo
-https://carla-ng.github.io/50-javascript-projects/
+[https://carla-ng.github.io/50-javascript-projects/](https://carla-ng.github.io/50-javascript-projects/)
 
-<br/>
+<br>
 
 ## :hammer_and_pick: Built With
 * JavaScript
@@ -16,14 +22,14 @@ https://carla-ng.github.io/50-javascript-projects/
 * [Github Users](https://api.github.com/) for Github Profiles
 * [PokéApi](https://pokeapi.co/) for Pokédex
 
-<br/>
+<br>
 
 ## :mag: Improvements / Features to Add
 * Fix little bugs found in some of the projects
 * Mobile support for every single project
 * Cross Browser testing
 
-<br/>
+<br>
 
 ## :clap: Acknowledgments
 * Project idea by Brad Traversy, Florin Pop - [50 Projects In 50 Days - HTML, CSS & JavaScript](https://www.udemy.com/course/50-projects-50-days/)
