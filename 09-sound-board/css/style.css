@@ -14,7 +14,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-body .btn {
+body #buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body #buttons .btn {
   background-color: rgba(201, 33, 137, 0.8);
   border: none;
   border-radius: 5px;
@@ -25,9 +30,9 @@ body .btn {
   margin: 16px;
   padding: 20px 40px;
 }
-body .btn:hover {
+body #buttons .btn:hover {
   opacity: 0.9;
 }
-body .btn:focus {
+body #buttons .btn:focus {
   outline: none;
 }

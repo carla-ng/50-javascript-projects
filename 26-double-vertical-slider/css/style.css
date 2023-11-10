@@ -18,14 +18,21 @@ body .slider-container {
 body .slider-container .left-slide {
   height: 100%;
   transition: transform 0.5s ease-in-out;
-  width: 35%;
+  width: 50%;
   position: absolute;
   top: 0;
   left: 0;
 }
+@media (min-width: 768px) {
+  body .slider-container .left-slide {
+    width: 35%;
+  }
+}
 body .slider-container .left-slide > div {
   color: #fff;
   height: 100%;
+  padding: 0 6px;
+  text-align: center;
   width: 100%;
   display: flex;
   align-items: center;
@@ -33,17 +40,39 @@ body .slider-container .left-slide > div {
   justify-content: center;
 }
 body .slider-container .left-slide > div h1 {
-  font-size: 40px;
+  font-size: 20px;
   margin-bottom: 10px;
   margin-top: -30px;
+}
+@media (min-width: 768px) {
+  body .slider-container .left-slide > div h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body .slider-container .left-slide > div h1 {
+    font-size: 40px;
+    max-width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body .slider-container .left-slide > div p {
+    max-width: 70%;
+  }
 }
 body .slider-container .right-slide {
   height: 100%;
   transition: transform 0.5s ease-in-out;
-  width: 65%;
+  width: 50%;
   position: absolute;
   top: 0;
-  left: 35%;
+  left: 50%;
+}
+@media (min-width: 768px) {
+  body .slider-container .right-slide {
+    left: 35%;
+    width: 65%;
+  }
 }
 body .slider-container .right-slide > div {
   background-position: center center;
@@ -61,14 +90,20 @@ body .slider-container .action-buttons button {
   padding: 15px;
   z-index: 100;
   position: absolute;
-  left: 35%;
-  top: 50%;
+  left: 50%;
+  top: 70%;
 }
 body .slider-container .action-buttons button:hover {
   color: #222;
 }
 body .slider-container .action-buttons button:focus {
   outline: none;
+}
+@media (min-width: 768px) {
+  body .slider-container .action-buttons button {
+    left: 35%;
+    top: 50%;
+  }
 }
 body .slider-container .action-buttons button.up-button {
   border-bottom-right-radius: 5px;

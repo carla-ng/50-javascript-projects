@@ -41,6 +41,11 @@ function showMovies( movies ) {
             </div>
         `
         main.appendChild(movieEl)
+
+        // Toggle the 'hovered' class on click
+        movieEl.addEventListener('click', function () {
+            movieEl.classList.toggle('hovered')
+        })
     })
 }
 

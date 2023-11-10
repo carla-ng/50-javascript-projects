@@ -91,7 +91,7 @@ body {
             padding: 15px;
             width: 100%;
 
-            &:focus {  outline: 0; }
+            &:focus { outline: 0; }
             &:active { transform: scale(0.98); }
             &:hover { background: rgba($form-wave-active-font-color, 0.8); }
         }

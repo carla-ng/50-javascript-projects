@@ -19,7 +19,7 @@ function getData() {
     excerpt.innerHTML =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
     profile_img.innerHTML =
-    '<img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Portrait of the author" />'
+    '<img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Callie" alt="Portrait of the author" />'
     name.innerHTML = 'Jane Doe'
     date.innerHTML = 'Oct 08, 2022'
 

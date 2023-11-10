@@ -17,14 +17,33 @@ body {
     align-items: center;
     justify-content: center;
 
-    canvas { border: 2px solid $primary-color; }
+    .desktop-message {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+
+    canvas {
+        border: 2px solid $primary-color;
+        margin-top: 2rem;
+        width: 310px;
+
+        @media (min-width: 576px) {
+            width: 600px;
+        }
+    }
 
     .toolbox {
         background-color: $primary-color;
         border: 1px solid $primary-color;
         display: flex;
         padding: 1rem;
-        width: 604px;
+        width: 310px;
+
+        @media (min-width: 576px) {
+            width: 600px;
+        }
 
         & > * {
             background-color: #fff;

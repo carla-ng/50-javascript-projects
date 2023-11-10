@@ -16,18 +16,24 @@ body {
     align-items: center;
     justify-content: center;
 
-    .btn {
-        background-color: rgba(201,33,137,0.8);
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        cursor: pointer;
-        font-family: inherit;
-        font-size: 18px;
-        margin: 16px;
-        padding: 20px 40px;
+    #buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        &:hover { opacity: 0.9; }
-        &:focus { outline: none; }
+        .btn {
+            background-color: rgba(201,33,137,0.8);
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 18px;
+            margin: 16px;
+            padding: 20px 40px;
+    
+            &:hover { opacity: 0.9; }
+            &:focus { outline: none; }
+        }
     }
 }

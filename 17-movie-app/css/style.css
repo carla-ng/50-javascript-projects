@@ -15,7 +15,7 @@ body header {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body header {
     flex-direction: column;
     justify-content: center;
@@ -28,7 +28,7 @@ body header span {
   padding: 0 6px;
   letter-spacing: 2px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body header #form {
     margin-top: 12px;
     width: 100%;
@@ -53,7 +53,7 @@ body header #form .search:focus {
   outline: none;
   background-color: #22254b;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   body header #form .search {
     width: 100%;
   }
@@ -75,8 +75,15 @@ body main .movie {
   position: relative;
   width: 300px;
 }
-body main .movie:hover .overview {
-  transform: translateY(0);
+@media (min-width: 992px) {
+  body main .movie:hover .overview {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 991px) {
+  body main .movie.hovered .overview {
+    transform: translateY(0);
+  }
 }
 body main .movie img {
   width: 100%;
@@ -118,6 +125,6 @@ body main .movie .overview {
   padding: 2rem;
   position: absolute;
   right: 0;
-  transform: translateY(101%);
+  transform: translateY(100%);
   transition: transform 0.3s ease-in;
 }

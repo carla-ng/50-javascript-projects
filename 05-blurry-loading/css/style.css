@@ -20,10 +20,8 @@ body .bg {
   filter: blur(0px);
   z-index: -1;
   position: absolute;
-  top: -30px;
-  left: -30px;
-  height: calc(100vh + 60px);
-  width: calc(100vw + 60px);
+  height: 100vh;
+  width: 100vw;
 }
 body .loading-text {
   color: #07005b;

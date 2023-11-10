@@ -47,8 +47,10 @@ body .container .split h1 {
 }
 @media (max-width: 800px) {
   body .container .split h1 {
-    font-size: 32px;
+    font-size: 23px;
+    text-align: center;
     top: 30%;
+    white-space: wrap;
   }
 }
 body .container .split .btn {
@@ -75,6 +77,7 @@ body .container .split .btn {
   body .container .split .btn {
     padding: 20px;
     top: 45%;
+    width: 65%;
   }
 }
 body .container .split.left {

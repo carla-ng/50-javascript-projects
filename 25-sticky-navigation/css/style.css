@@ -36,10 +36,16 @@ body nav .container .logo a {
   transition: all 0.3s ease-in-out;
 }
 body nav .container ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  body nav .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
 }
 body nav .container ul li a {
   color: #fff;

@@ -19,6 +19,7 @@
 * [icanhazdadjoke](https://icanhazdadjoke.com/) for Dad Jokes
 * [The Movie Database](https://www.themoviedb.org/) for Movie App
 * [Random User Generator](https://randomuser.me/) for a few of the projects
+* [DiceBear](https://www.dicebear.com/) for a few of the projects
 * [Github Users](https://api.github.com/) for Github Profiles
 * [PokéApi](https://pokeapi.co/) for Pokédex
 

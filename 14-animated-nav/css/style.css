@@ -35,16 +35,22 @@ body nav ul {
 }
 body nav ul li {
   cursor: pointer;
-  font-weight: bold;
   opacity: 0;
   transform: rotateY(0deg);
   transition: transform 0.6s linear, opacity 0.6s linear;
 }
 body nav ul li a {
   color: #000;
-  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 8px;
   position: relative;
   text-decoration: none;
+}
+@media (min-width: 500px) {
+  body nav ul li a {
+    margin: 0 10px;
+  }
 }
 body nav .icon {
   background-color: #fff;
@@ -72,8 +78,14 @@ body nav .icon .line.line2 {
   bottom: 10px;
 }
 body nav.active {
-  padding: 20px 20px 20px 15px;
-  width: 350px;
+  padding: 20px 20px 20px 10px;
+  width: 310px;
+}
+@media (min-width: 500px) {
+  body nav.active {
+    padding: 20px 20px 20px 15px;
+    width: 350px;
+  }
 }
 body nav.active ul {
   width: 100%;

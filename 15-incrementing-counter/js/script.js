@@ -1,5 +1,6 @@
 const counters = document.querySelectorAll('.counter')
 
+// Adding counter numbers
 counters.forEach( counter => {
     counter.innerText = '0'
 

@@ -46,6 +46,9 @@ body .search .btn i {
 body .search input:focus, body .search .btn:focus {
   outline: none;
 }
+body .search.active {
+  translate: -25px 0;
+}
 body .search.active input {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 0;
