@@ -9,7 +9,13 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
+}
+body .desktop-message {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
 }
 body .container {
   display: flex;
@@ -17,6 +23,7 @@ body .container {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 400px;
+  width: 100%;
 }
 body .container .square {
   background-color: #fff;

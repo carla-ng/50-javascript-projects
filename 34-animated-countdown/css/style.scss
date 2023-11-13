@@ -65,6 +65,10 @@ body {
             transform: translate(-50%, - 50%) scale(1);
         }
 
+        h1 {
+            text-align: center;
+        }
+
         #replay{
             background-color: #3498db;
             border-radius: 3px;
@@ -81,24 +85,6 @@ body {
                 display: inline-block;
                 position: relative;
                 transition: 0.3s;
-
-                &:after{
-                    content: '\00bb';
-                    position: absolute;
-                    opacity: 0;
-                    right: -20px;
-                    top: 0;
-                    transition: 0.5s;
-                }
-            }
-
-            &:hover span{
-                padding-right: 25px;
-                
-                &:after{
-                    opacity: 1;
-                    right: 0;
-                }
             }
         }
     }

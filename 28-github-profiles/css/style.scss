@@ -11,8 +11,7 @@ body {
     color: #fff;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    margin: 1rem;
     
     display: flex;
     flex-direction: column;
@@ -45,14 +44,17 @@ body {
     }
 
     #main {
+        width: 100%;
+
         .card {
             background-color: $primary-color;
             border-radius: 20px;
             box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
             display: flex;
-            margin: 0 1.5rem;
+            margin: 0 auto;
             max-width: 800px;
             padding: 3rem;
+            width: 100%;
 
             @media (max-width: 500px) {
                 align-items: center;
@@ -63,6 +65,7 @@ body {
 
             .avatar-container {
                 img.avatar {
+                    background-color: #fff;
                     border-radius: 50%;
                     border: 6px solid $secondary-color;
                     height: 150px;
@@ -78,6 +81,7 @@ body {
             
                 ul {
                     display: flex;
+                    flex-wrap: wrap;
                     justify-content: space-between;
             
                     list-style-type: none;
