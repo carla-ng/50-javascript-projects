@@ -9,7 +9,7 @@ body {
 body .projects {
   width: 90vw;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body .projects {
     max-width: 800px;
     width: 60vw;
@@ -27,7 +27,7 @@ body .projects .projects__list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   body .projects .projects__list {
     grid-template-columns: repeat(3, 1fr);
   }

@@ -20,11 +20,11 @@ body .testimonial-container {
   border-radius: 15px;
   color: #fff;
   margin: 20px auto;
-  max-width: 768px;
+  max-width: 767px;
   padding: 50px 80px;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body .testimonial-container {
     padding: 20px 30px;
   }
@@ -48,7 +48,7 @@ body .testimonial-container .fa-quote.fa-quote-right {
 body .testimonial-container .fa-quote.fa-quote-left {
   right: 40px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body .testimonial-container .fa-quote {
     display: none;
   }
