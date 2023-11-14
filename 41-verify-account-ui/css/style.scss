@@ -23,16 +23,22 @@ body {
         padding: 30px 50px;
         text-align: center;
 
+        @media (max-width: 600px) {
+            padding: 20px 10px;
+            width: 90%;
+        }
+
         .code-container {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 40px 0;
 
-            @media (max-width: 600px) { flex-wrap: wrap; }
+            //@media (max-width: 600px) { flex-wrap: wrap; }
 
             .code {
                 -moz-appearance: textfield;
+                appearance: textfield;
                 border-radius: 5px;
                 border: 1px solid #eee;
                 caret-color: transparent;
@@ -55,9 +61,9 @@ body {
                 }
 
                 @media (max-width: 600px) {
-                    font-size: 60px;
-                    height: 80px;
-                    max-width: 70px;
+                    font-size: 30px;
+                    height: 40px;
+                    max-width: 40px;
                 }
             }
         }

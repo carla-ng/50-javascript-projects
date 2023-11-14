@@ -60,8 +60,8 @@ body .screen .insects-list li .choose-insect-btn {
   color: #fff;
   cursor: pointer;
   font-family: inherit;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 body .screen .insects-list li .choose-insect-btn:hover {
   background-color: #fff;
@@ -71,10 +71,10 @@ body .screen .insects-list li .choose-insect-btn:active {
   background-color: rgba(255, 255, 255, 0.7);
 }
 body .screen .insects-list li .choose-insect-btn img {
-  height: 100px;
+  height: 60px;
   -o-object-fit: contain;
      object-fit: contain;
-  width: 100px;
+  width: 60px;
 }
 body .screen.game-container {
   position: relative;
@@ -86,8 +86,16 @@ body .screen.game-container .time, body .screen.game-container .score {
 body .screen.game-container .time {
   left: 20px;
 }
-body .screen.game-container .score {
-  right: 20px;
+@media (min-width: 768px) {
+  body .screen.game-container .score {
+    right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body .screen.game-container .score {
+    left: 20px;
+    top: 55px;
+  }
 }
 body .screen.game-container .message {
   background-color: rgba(0, 0, 0, 0.5);

@@ -1,7 +1,11 @@
 const codes = document.querySelectorAll('.code')
 
+
+// Add focus to first element
 codes[0].focus()
 
+
+// Keydown event listeners
 codes.forEach((code, idx) => {
     code.addEventListener('keydown', (e) => {
         if ( e.key >= 0 && e.key <= 9 ) {

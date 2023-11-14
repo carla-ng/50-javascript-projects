@@ -7,9 +7,6 @@ let selectedRating = 'Satisfied'
 
 // Listener
 ratingsContainer.addEventListener('click', (e) => {
-    console.log('e.target.nextElementSibling: ',e.target.nextElementSibling)
-    console.log(' e.target.previousElementSibling: ', e.target.previousElementSibling)
-    
     if ( e.target.parentNode.classList.contains('rating') && e.target.nextElementSibling ) {
         removeActive()
         e.target.parentNode.classList.add('active')

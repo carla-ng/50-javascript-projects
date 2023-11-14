@@ -15,12 +15,12 @@ body .nav-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
 }
 body .nav-btn.open-btn {
   position: fixed;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
 }
 body .text {
   text-transform: uppercase;
@@ -42,8 +42,8 @@ body .nav.visible {
 body .nav .close-btn {
   opacity: 0.3;
   position: absolute;
-  top: 40px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
 }
 body .nav .list {
   list-style-type: none;

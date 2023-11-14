@@ -9,7 +9,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 body .magic {
   background-color: #f5354b;
@@ -37,22 +36,26 @@ body .boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 500px;
+  height: 200px;
+  margin-top: 100px;
   position: relative;
   transition: 0.4s ease;
-  width: 500px;
+  width: 200px;
 }
 body .boxes.big {
-  height: 600px;
-  width: 600px;
+  height: 300px;
+  width: 300px;
+}
+body .boxes.big .box {
+  margin: 12px;
 }
 body .boxes .box {
   background-image: url("https://media4.giphy.com/media/4XSc0NkhKJQhW/giphy.gif?cid=ecf05e47we3bjqhph3vnqpilr04x2q6g1etfws7b64s8y7h2&rid=giphy.gif&ct=g");
   background-repeat: no-repeat;
-  background-size: 500px 500px;
+  background-size: 200px 200px;
   position: relative;
-  height: 125px;
-  width: 125px;
+  height: 50px;
+  width: 50px;
   transition: 0.4s ease;
 }
 body .boxes .box::after {
@@ -67,7 +70,7 @@ body .boxes .box::after {
 }
 body .boxes .box::before {
   content: "";
-  background-color: #f5354b;
+  background-color: #a71526;
   bottom: -15px;
   height: 15px;
   left: 8px;

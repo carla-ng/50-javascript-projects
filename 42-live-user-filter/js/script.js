@@ -9,28 +9,33 @@ filter.addEventListener('input', (e) => filterData(e.target.value))
 
 // Get users data
 async function getData() {
-    const res = await fetch('https://randomuser.me/api?results=50')
+    const res = await fetch('https://fakerapi.it/api/v1/persons?_quantity=30')
+    const data = await res.json()
 
-    const { results } = await res.json()
+    const { data: results } = data  // Access the 'data' property
 
     // Clear result
     result.innerHTML = ''
 
-    results.forEach(user => {
-        const li = document.createElement('li')
+    if ( results && Array.isArray(results) ) {
+        results.forEach(user => {
+            const li = document.createElement('li')
 
-        listItems.push(li)
+            listItems.push(li)
 
-        li.innerHTML = `
-            <img src="${user.picture.large}" alt="${user.name.first}">
-            <div class="user-info">
-                <h4>${user.name.first} ${user.name.last}</h4>
-                <p>${user.location.city}, ${user.location.country}</p>
-            </div>
-        `
+            li.innerHTML = `
+                <div class="user-info">
+                    <h4>${user.firstname} ${user.lastname}</h4>
+                    <p>${user.address.city}, ${user.address.country}</p>
+                </div>
+            `
 
-        result.appendChild(li)
-    })
+            result.appendChild(li)
+        })
+    } else {
+        console.error('Invalid data structure:', data)
+    }
+    
 }
 
 

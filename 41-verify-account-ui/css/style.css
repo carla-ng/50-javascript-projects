@@ -21,19 +21,22 @@ body .container {
   padding: 30px 50px;
   text-align: center;
 }
+@media (max-width: 600px) {
+  body .container {
+    padding: 20px 10px;
+    width: 90%;
+  }
+}
 body .container .code-container {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px 0;
 }
-@media (max-width: 600px) {
-  body .container .code-container {
-    flex-wrap: wrap;
-  }
-}
 body .container .code-container .code {
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
   border-radius: 5px;
   border: 1px solid #eee;
   caret-color: transparent;
@@ -54,9 +57,9 @@ body .container .code-container .code:valid {
 }
 @media (max-width: 600px) {
   body .container .code-container .code {
-    font-size: 60px;
-    height: 80px;
-    max-width: 70px;
+    font-size: 30px;
+    height: 40px;
+    max-width: 40px;
   }
 }
 body .container .info {

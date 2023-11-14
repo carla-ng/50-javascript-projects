@@ -18,8 +18,9 @@ body .quiz-container {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  max-width: 600px;
   overflow: hidden;
-  width: 600px;
+  width: 95%;
 }
 body .quiz-container h2 {
   margin: 0;
@@ -27,7 +28,12 @@ body .quiz-container h2 {
   text-align: center;
 }
 body .quiz-container .quiz-header {
-  padding: 2rem 4rem;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  body .quiz-container .quiz-header {
+    padding: 2rem 4rem;
+  }
 }
 body .quiz-container .quiz-header ul {
   list-style-type: none;

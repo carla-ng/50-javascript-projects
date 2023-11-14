@@ -28,8 +28,11 @@ body {
 
         input[type='range'] {
             -webkit-appearance: none;
+            appearance: none;
             margin: 18px 0;
-            width: 300px;
+            width: 245px;
+
+            @media (min-width: 768px) { width: 300px; }
         }
 
         input[type='range']:focus { outline: none; }
@@ -57,6 +60,7 @@ body {
 
         input[type='range']::-webkit-slider-thumb {
             -webkit-appearance: none;
+            appearance: none;
             background: #fff;
             border-radius: 50%;
             border: 1px solid $custom-range-slider-background;
@@ -77,6 +81,7 @@ body {
 
         input[type='range']::-moz-range-thumb {
             -webkit-appearance: none;
+            appearance: none;
             background: #fff;
             border-radius: 50%;
             border: 1px solid $custom-range-slider-background;

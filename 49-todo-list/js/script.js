@@ -27,6 +27,7 @@ function addTodo(todo) {
     }
 
     if ( todoText ) {
+        // Create todo HTML element
         const todoElem = document.createElement('li')
         if ( todo && todo.completed ) {
             todoElem.classList.add('completed')
@@ -39,13 +40,6 @@ function addTodo(todo) {
             updateLocalStorage()
         }) 
 
-        // Remove to-do
-        todoElem.addEventListener('contextmenu', (e) => {
-            e.preventDefault()
-
-            todoElem.remove()
-            updateLocalStorage()
-        }) 
         todosUL.appendChild(todoElem)
 
         input.value = ''

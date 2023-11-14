@@ -12,26 +12,36 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 body h1 {
   color: rgb(179, 131, 226);
-  font-size: 10rem;
+  font-size: 4rem;
   opacity: 0.4;
   text-align: center;
+}
+@media (min-width: 768px) {
+  body h1 {
+    font-size: 10rem;
+  }
 }
 body form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
-  width: 400px;
+  max-width: 400px;
+  width: 95%;
 }
 body form .input {
   border: none;
   color: #444;
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem 2rem;
   width: 100%;
+}
+@media (min-width: 768px) {
+  body form .input {
+    font-size: 2rem;
+  }
 }
 body form .input::-moz-placeholder {
   color: #d5d5d5;
@@ -60,6 +70,6 @@ body form .todos li.completed {
 }
 body small {
   color: #b5b5b5;
-  margin-top: 3rem;
+  padding: 3rem 0;
   text-align: center;
 }

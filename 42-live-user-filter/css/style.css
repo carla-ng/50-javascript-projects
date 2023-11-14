@@ -74,16 +74,6 @@ body .container .user-list li:not(:last-of-type) {
 body .container .user-list li.hide {
   display: none;
 }
-body .container .user-list li img {
-  border-radius: 50%;
-  height: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 50px;
-}
-body .container .user-list li .user-info {
-  margin-left: 10px;
-}
 body .container .user-list li .user-info h4 {
   margin: 0 0 10px;
 }

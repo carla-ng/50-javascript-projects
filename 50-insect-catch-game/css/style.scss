@@ -58,8 +58,8 @@ body {
                     color: #fff;
                     cursor: pointer;
                     font-family: inherit;
-                    width: 150px;
-                    height: 150px;
+                    width: 120px;
+                    height: 120px;
             
                     &:hover {
                         background-color: #fff;
@@ -69,9 +69,9 @@ body {
                     &:active { background-color: rgba(255, 255, 255, 0.7); }
             
                     img {
-                        height: 100px;
+                        height: 60px;
                         object-fit: contain;
-                        width: 100px;
+                        width: 60px;
                     }
                 }
             }
@@ -84,8 +84,19 @@ body {
                 position: absolute;
                 top: 20px;
             }
+
             .time { left: 20px; }
-            .score { right: 20px; }
+
+            .score {
+                @media (min-width: 768px) {
+                    right: 20px;
+                }
+
+                @media (max-width: 767px) {
+                    left: 20px;
+                    top: 55px;
+                }
+            }
             
             .message {
                 background-color: rgba(0, 0, 0, 0.5);
