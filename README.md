@@ -27,7 +27,6 @@
 
 ## :mag: Improvements / Features to Add
 * Fix little bugs found in some of the projects
-* Mobile support for every single project
 * Cross Browser testing
 
 <br>
